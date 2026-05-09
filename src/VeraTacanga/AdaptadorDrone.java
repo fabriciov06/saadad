@@ -8,18 +8,20 @@ package VeraTacanga;
  *
  * @author sistemas
  */
-public class AdaptadorPavo implements Pato{
-    private Pavo pavo;
+public class AdaptadorDrone {
+    private Drone drone;
     
-    AdaptadorPavo(Pavo pavo){
-        this.pavo = pavo;
+    AdaptadorDrone(Drone drone){
+        this.drone = drone;
     }
     
     @Override
     public void cuaquear(){
-        pavo.gluglutear();
+        drone.beep();
     }
     
     @Override
-    public
+    public void volar(){
+        drone.girarRotor();
+    }
 }

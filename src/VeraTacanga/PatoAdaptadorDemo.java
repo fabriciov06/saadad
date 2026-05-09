@@ -10,14 +10,14 @@ package VeraTacanga;
  */
 public class PatoAdaptadorDemo {
     public static void main(String[] args) {
-        AdaptadorPavo ap = new AdaptadorPavo(new PavoSilvestre());
+        AdaptadorDrone ad = new AdaptadorDrone(new PatoReal());
         
         PatoReal pr = new PatoReal();
         
-        ap.cuaquear();
-        ap.volar();
+        ad.cuaquear();
+        ad.volar();
         
-        pr.volar();
+        pr.cuaquear();
         pr.volar();
     }
 }
