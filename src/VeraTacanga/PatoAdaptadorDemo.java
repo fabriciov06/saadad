@@ -10,14 +10,24 @@ package VeraTacanga;
  */
 public class PatoAdaptadorDemo {
     public static void main(String[] args) {
-        AdaptadorDrone ad = new AdaptadorDrone(new PatoReal());
+        AdaptadorDrone ad = new AdaptadorDrone(new SuperDrone());
         
         PatoReal pr = new PatoReal();
         
+        System.out.println("El drone hace...");
         ad.cuaquear();
         ad.volar();
         
+        System.out.println("El pato hace...");
         pr.cuaquear();
         pr.volar();
+        
+        System.out.println("El adaptardor Drone hace...");  
+        ad.cuaquear();
+        ad.volar();
+        ad.volar();
+        ad.volar();
+        ad.volar();
+        ad.volar();
     }
 }

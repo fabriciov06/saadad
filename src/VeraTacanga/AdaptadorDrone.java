@@ -15,12 +15,10 @@ public class AdaptadorDrone {
         this.drone = drone;
     }
     
-    @Override
     public void cuaquear(){
         drone.beep();
     }
     
-    @Override
     public void volar(){
         drone.girarRotor();
     }
